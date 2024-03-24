@@ -10,11 +10,14 @@ li, a {
     list-style-type: none;
 }
 
+html {
+    margin: 0 10vw;
+}
+
 body {
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0 10vw;
 }
 
 nav.navbar {
@@ -58,6 +61,7 @@ nav.navbar .icon {
     font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 
 nav.navbar .icon::first-letter {
@@ -83,10 +87,90 @@ ul.menu {
     text-align: center;
 }
 
+main.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px 45px;
+    margin-top: 30px;
+}
+
+main.grid .container img {
+    width: 100%;
+}
+
+main.grid .container .topic {
+    display: inline-block;
+    margin: 10px 0;
+    /* background-color: green; */
+    /* padding: 3px; */
+    font-size: 0.75rem;
+    /* color: white; */
+    text-transform: uppercase;
+}
+
+main.grid .container .title {
+    font-size: 1.2rem;
+}
+
+main.grid .container .comments {
+    font-size: 0.95rem;
+    margin: 5px 0 0;
+    display: inline-block;
+}
+
+main.grid .container .comments span{
+    font-size: 0.8rem;
+}
+
+main.grid .container .description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 7px;
+}
+
+main.grid .container:first-child {
+    grid-column: span 2;
+}
+
+main.grid .container:first-child .title {
+    font-size: 1.6rem;
+}
+
+main.grid .container .smaller {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0 10px;
+}
+
+main.grid .container .smaller img {
+    grid-row: span 2;
+}
+
+main.grid .container .smaller .description {
+    margin: 0;
+    font-weight: 400;
+}
+
+main.grid .tr .topic {
+    margin: 10px 0;
+}
+
+main.grid .tr .title {
+    font-size: 0.95rem;
+}
+
+main.grid .tr .description {
+    margin-bottom: 20px;
+}
 
 @media (max-width: 1250px) {
     nav.navbar ul li.search, nav.navbar ul li.search i, nav.navbar ul li.subscription-btn span {
         display: none !important; 
+    }
+
+    main.grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -122,6 +206,16 @@ ul.menu {
     }
 }
 
+@media (max-width: 570px) {
+    main.grid {
+        display: block;
+    }
+
+    main.grid .container {
+        margin-bottom: 60px;
+    }
+}
+
 @media (max-width: 480px) {
     nav.navbar .icon {
         font-size: 1rem;
@@ -129,5 +223,11 @@ ul.menu {
 
     nav.navbar .icon::first-letter {
         font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 370px) {
+    nav.navbar ul li.radio, nav.navbar ul li.notifications {
+        display: none;
     }
 }
