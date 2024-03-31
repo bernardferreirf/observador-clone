@@ -1,15 +1,15 @@
 # <img src="./favicon.ico"> Observado Clone
 
-Observador is a Portuguese online newspaper [Original Website](https://bernardferreirf.github.io/observador-clone/))!
+Observador is a Portuguese online newspaper [Original Website](https://bernardferreirf.github.io/observador-clone/)!
 
 ## Getting Started
 
-Find The Clone Website In [Observaodor Clone](https://bernardferreirf.github.io/observador-clone)
+Find The Clone Website In [Observador Clone](https://bernardferreirf.github.io/observador-clone)
 
 
 ## Running the tests
 
-Run The Clone Wbesite -> [Click Here](https://bernardferreirf.github.io/home)
+Run The Clone Wbesite -> [Click Here](https://bernardferreirf.github.io/observador-clone)
 
 
 ## Built With
